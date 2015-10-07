@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>TRIANGLER</title>
+        <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script>
+        <script src="js/triangler.js"></script>
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Dosis:200,400,700,800'>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+        <div id="content">
+            <div id="title">
+                Triangler (Firefox & Chrome)
+                <br><hr>
+            </div>
+            
+            <div id="drop-target">
+                Drop image file here.
+            </div>
+            
+            
+            <div id="original_div" class="image" style="display:none;">
+                <canvas id="canvas_original"></canvas>
+            </div>
+            
+            
+            <div id="current_image" class="image">
+                <canvas id="canvas_best"></canvas>
+            </div>
+            
+            <div id="buttons">
+                <div id="start" onclick="start()" class="button">Start</div>
+                <div id="stop" onclick="stop()" style="display:none;" class="button">Stop</div><br>
+                <div id="test" onclick="checkTriangles()" class="button">1 x</div>
+                <br>
+                <hr>
+                <div class="image" style="display:block;">
+                    <canvas id="canvas_triangle"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="footer">Triangler by&nbsp;&nbsp;<a href="http://www.innouveau.nl" target="_blank">Innouveau</a></div>
+    </body>
+</html>
